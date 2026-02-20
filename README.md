@@ -1,4 +1,5 @@
 BUỔI THỰC HÀNH SỐ 5 NHÓM 6
+
 Dự án này là tập hợp các kết quả thực hiện trong Bài thực hành 05 với chủ đề Tạo, Quản lý và Chia sẻ nội dung số. Mục tiêu chính của dự án là vận dụng các công cụ trí tuệ nhân tạo (AI) để tìm kiếm thông tin, xây dựng nội dung đa phương tiện và quản lý sản phẩm trên nền tảng số theo đúng quy định bản quyền.
 
 Về thành phần nội dung văn bản, dự án bao gồm tệp BaoCao_UngDungCongNghe.pdf trình bày chi tiết về ứng dụng công nghệ số trong học tập với sự hỗ trợ nội dung từ Google Bard và hình ảnh minh họa từ Unsplash. Bên cạnh đó, tệp LichSuChinhSua_Nhom.png ghi lại quá trình làm việc nhóm thông qua tính năng Version History trên Google Docs.
