@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -20,7 +18,6 @@
             min-height: 100vh;
             padding: 20px;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -29,32 +26,26 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
-
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px 20px;
             text-align: center;
         }
-
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-
         header p {
             font-size: 1.1em;
             opacity: 0.9;
         }
-
         .content {
             padding: 40px 20px;
         }
-
         .section {
             margin-bottom: 50px;
         }
-
         .section h2 {
             font-size: 2em;
             color: #667eea;
@@ -62,11 +53,9 @@
             border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
         }
-
         .infographic-container {
             text-align: center;
         }
-
         .infographic-container img {
             max-width: 100%;
             height: auto;
@@ -74,44 +63,20 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-
         .infographic-container img:hover {
             transform: scale(1.05);
         }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            background: #000;
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-        }
-
-        /* Alternative: Fixed aspect ratio container */
         .video-wrapper {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-
         .video-wrapper video {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
-
         footer {
             background: #f8f9fa;
             padding: 20px;
@@ -119,42 +84,31 @@
             color: #666;
             border-top: 1px solid #ddd;
         }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8em;
             }
-
             .section h2 {
                 font-size: 1.5em;
             }
-
             .content {
                 padding: 20px;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header>
             <h1>Kỷ Nguyên Số: Khai Phá Sức Mạnh Công Nghệ Trong Học Tập Và Đời Sống</h1>
-            <p>Khám phá cách công nghệ số đang tái định nghĩa phương thức tiếp cận tri thức của con người. Từ việc tối
-                ưu hóa hiệu suất làm việc đến việc xóa bỏ rào cản địa lý trong giáo dục, bài viết tổng hợp những lợi ích
-                cốt lõi và lộ trình thích nghi hiệu quả trong thời đại 4.0.</p>
+            <p>Khám phá cách công nghệ số đang tái định nghĩa phương thức tiếp cận tri thức của con người. Từ việc tối ưu hóa hiệu suất làm việc đến việc xóa bỏ rào cản địa lý trong giáo dục, bài viết tổng hợp những lợi ích cốt lõi và lộ trình thích nghi hiệu quả trong thời đại 4.0.</p>
         </header>
-
         <div class="content">
             <!-- Infographic Section -->
             <section class="section">
                 <h2>📊 Infographic</h2>
                 <div class="infographic-container">
-                    <!-- Replace 'infographic.jpg' with your actual image file path -->
                     <img src="InfographicCanva.jpg" alt="Infographic Image" />
-                    <p style="margin-top: 15px; color: #666;">
-                    </p>
                 </div>
             </section>
 
@@ -162,25 +116,20 @@
             <section class="section">
                 <h2>🎥 Video Presentation</h2>
                 <div class="video-wrapper">
-                    <!-- Replace 'video.mp4' with your actual video file path -->
-                    <video width="100%" max-width="800px" controls poster="poster.jpg">
-                        <source src="Video tạo bởi CapCut, tài liệu từ Pexels_FreeSound.mp4" type="video/mp4">
-                        <p>Your browser does not support the HTML5 video tag.
-                            <a href="Video tạo bởi CapCut, tài liệu từ Pexels_FreeSound.mp4">Download the video</a>
-                            instead.
-                        </p>
+                    <video controls poster="poster.jpg">
+                        <source src="video.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+                        <a href="video.mp4">Tải video về máy</a> thay thế.
                     </video>
                 </div>
-                <p style="margin-top: 15px; color: #666;">
-                    Video controls: Play, Pause, Volume, Fullscreen, Progress bar
+                <p style="margin-top: 15px; color: #666; text-align: center;">
+                    Điều khiển video: Phát, Tạm dừng, Âm lượng, Toàn màn hình, Thanh tiến trình
                 </p>
             </section>
         </div>
-
         <footer>
-            <p>&copy; 2026 Nhóm 06/E02 - NTCNTT(HK02). All rights reserved.</p>
+            <p>© 2026 Nhóm 06/E02 - NTCNTT(HK02). All rights reserved.</p>
         </footer>
     </div>
 </body>
-
 </html>
