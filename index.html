@@ -67,15 +67,22 @@
             transform: scale(1.05);
         }
         .video-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .video-wrapper video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
             max-width: 100%;
-            height: auto;
+            background: #000;
             border-radius: 8px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         footer {
             background: #f8f9fa;
@@ -111,19 +118,22 @@
                     <img src="InfographicCanva.jpg" alt="Infographic Image" />
                 </div>
             </section>
-
             <!-- Video Section -->
             <section class="section">
                 <h2>🎥 Video Presentation</h2>
                 <div class="video-wrapper">
-                    <video controls poster="poster.jpg">
-                        <source src="video.mp4" type="video/mp4">
-                        Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
-                        <a href="video.mp4">Tải video về máy</a> thay thế.
-                    </video>
+                    <iframe 
+                        src="https://www.youtube.com/embed/PImSQvo4LsU" 
+                        title="Video Presentation - Kỷ Nguyên Số Nhóm 6" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 <p style="margin-top: 15px; color: #666; text-align: center;">
-                    Điều khiển video: Phát, Tạm dừng, Âm lượng, Toàn màn hình, Thanh tiến trình
+                    Điều khiển video: Phát, Tạm dừng, Âm lượng, Toàn màn hình, Thanh tiến trình<br>
+                    (Nếu không xem được, <a href="https://youtu.be/PImSQvo4LsU" target="_blank" style="color: #667eea;">xem trực tiếp trên YouTube</a>)
                 </p>
             </section>
         </div>
